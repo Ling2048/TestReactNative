@@ -1,0 +1,18 @@
+{
+    "version": "0.1.0",
+    "command": "dotnet",
+    "isShellCommand": true,
+    "args": [],
+    "tasks": [
+        {
+            "taskName": "build",
+            "command": "cmd",
+            "suppressTaskName": true,
+            "args": [
+                "/c chcp 65001 >nul && dotnet build ${workspaceRoot}/Maybe.csproj"   
+            ],
+            "isBuildCommand": true,
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}
